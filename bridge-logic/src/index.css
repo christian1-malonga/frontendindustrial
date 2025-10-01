@@ -1,0 +1,285 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elite Corporate Design System for ProLogistics Consulting */
+
+@layer base {
+  :root {
+    /* Corporate Brand Colors - Premium Palette */
+    --background: 0 0% 100%;
+    --foreground: 215 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 30% 20%;
+
+    /* Primary Corporate Navy - Elite Professional */
+    --primary: 215 90% 12%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 215 85% 22%;
+    --primary-dark: 215 95% 8%;
+    --primary-glow: 215 85% 35%;
+
+    /* Professional Platinum Gray */
+    --secondary: 215 18% 45%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 215 18% 88%;
+    --secondary-dark: 215 18% 22%;
+
+    /* Refined Muted Grays */
+    --muted: 215 18% 96%;
+    --muted-foreground: 215 18% 42%;
+
+    /* Emerald Innovation Accent - Premium */
+    --accent: 160 84% 25%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 160 84% 40%;
+    --accent-glow: 160 84% 55%;
+
+    /* Golden Energy Accent - Luxury */
+    --energy: 35 88% 50%;
+    --energy-foreground: 0 0% 98%;
+    --energy-light: 35 88% 62%;
+    --energy-glow: 35 88% 75%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 18% 88%;
+    --input: 215 18% 92%;
+    --ring: 215 90% 12%;
+
+    --radius: 0.875rem;
+
+    /* Elite Corporate Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary-dark)) 0%, hsl(var(--primary)) 50%, hsl(var(--primary-light)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)) 0%, hsl(var(--primary)) 30%, hsl(var(--accent)) 70%, hsl(var(--energy)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-innovation: linear-gradient(45deg, hsl(var(--accent)) 0%, hsl(var(--accent-light)) 30%, hsl(var(--energy)) 100%);
+    --gradient-professional: linear-gradient(135deg, hsl(var(--secondary-dark)) 0%, hsl(var(--secondary)) 50%, hsl(var(--secondary-light)) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--energy)) 100%);
+
+    /* Luxury Professional Shadows */
+    --shadow-corporate: 0 8px 32px -8px hsl(var(--primary) / 0.3);
+    --shadow-elegant: 0 12px 48px -12px hsl(var(--primary) / 0.4);
+    --shadow-premium: 0 16px 64px -16px hsl(var(--primary) / 0.25);
+    --shadow-soft: 0 4px 12px -2px hsl(var(--secondary) / 0.12);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-energy: 0 8px 32px -8px hsl(var(--energy) / 0.2);
+
+    /* Premium Smooth Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elegant: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+    /* Sidebar (for future use) */
+    --sidebar-background: 215 84% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 215 84% 25%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 16% 25%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 16% 25%;
+    --sidebar-ring: 215 84% 25%;
+  }
+
+  .dark {
+    --background: 215 25% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 25% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 25% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 215 84% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 215 84% 35%;
+    --primary-dark: 215 84% 15%;
+
+    --secondary: 215 16% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 215 16% 25%;
+    --secondary-dark: 215 16% 8%;
+
+    --muted: 215 16% 12%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 142 72% 35%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 142 72% 45%;
+
+    --energy: 25 95% 58%;
+    --energy-foreground: 0 0% 98%;
+    --energy-light: 25 95% 68%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 16% 15%;
+    --input: 215 16% 15%;
+    --ring: 215 84% 25%;
+
+    --sidebar-background: 215 25% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 215 84% 25%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 215 16% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 16% 15%;
+    --sidebar-ring: 215 84% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.7;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+
+  h1 {
+    @apply text-5xl lg:text-6xl xl:text-7xl;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+
+  h2 {
+    @apply text-4xl lg:text-5xl xl:text-6xl;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  h3 {
+    @apply text-3xl lg:text-4xl;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    line-height: 1.75;
+    font-weight: 400;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  /* Premium Corporate Gradients */
+  .corporate-gradient {
+    background: var(--gradient-primary);
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .innovation-gradient {
+    background: var(--gradient-innovation);
+  }
+
+  .professional-gradient {
+    background: var(--gradient-professional);
+  }
+
+  .premium-gradient {
+    background: var(--gradient-premium);
+  }
+
+  /* Luxury Shadow Effects */
+  .shadow-corporate {
+    box-shadow: var(--shadow-corporate);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-energy {
+    box-shadow: var(--shadow-energy);
+  }
+
+  /* Premium Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .transition-elegant {
+    transition: var(--transition-elegant);
+  }
+
+  /* Professional Interactive Elements */
+  .hover-lift {
+    @apply transition-elegant hover:scale-105 hover:shadow-elegant;
+  }
+
+  .hover-glow {
+    @apply transition-smooth hover:shadow-glow;
+  }
+
+  .hover-professional {
+    @apply transition-smooth hover:shadow-corporate hover:scale-102;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  }
+
+  .professional-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-soft hover:shadow-elegant transition-elegant;
+  }
+
+  /* Typography Utilities */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent;
+  }
+
+  .text-gradient-innovation {
+    @apply bg-gradient-to-r from-accent via-accent-light to-energy bg-clip-text text-transparent;
+  }
+
+  .text-professional {
+    @apply text-foreground/90 font-medium tracking-tight;
+  }
+
+  .text-luxury {
+    @apply text-foreground font-semibold tracking-tight;
+  }
+}
